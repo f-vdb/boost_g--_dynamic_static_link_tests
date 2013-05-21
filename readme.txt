@@ -1,4 +1,3 @@
-
 boost_date_time.cpp
 -------------------
 the source code with boost
@@ -14,6 +13,11 @@ g++ options for dynamic linking the boost lib
 g++_link_static.sh
 ------------------
 g++ options for static linking the boost lib
+
+
+just_compile.sh
+---------------
+shell-script that only compiles the sourcecode 
 
 
 
