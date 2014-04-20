@@ -12,8 +12,11 @@ int main()
        iter != end;
        ++iter)
   {
+    /*  
     std::string name = iter->path().leaf();
     if (regex_match(name, pattern))
+      std::cout << iter->path() << "\n";
+      */
       std::cout << iter->path() << "\n";
   }
 }
