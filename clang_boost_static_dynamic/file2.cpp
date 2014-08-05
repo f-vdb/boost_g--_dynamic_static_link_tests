@@ -7,13 +7,17 @@ using namespace boost::filesystem;
 int main()
 {
   path current_dir("."); //
-  boost::regex pattern("a.*"); // list all files starting with a
+  //boost::regex pattern("a.*"); // list all files starting with a
   for (recursive_directory_iterator iter(current_dir), end;
        iter != end;
        ++iter)
   {
-    std::string name = iter->path().leaf();
-    if (regex_match(name, pattern))
-      std::cout << iter->path() << "\n";
+    //std::string name = iter->path().filename().string(); 
+    //if (regex_match(name, pattern))
+    //  std::cout << iter->path() << "\n";
+    
+    //std::cout << name << "\ņ";
+
+    std::cout << iter->path().filename() << "\n";
   }
 }
