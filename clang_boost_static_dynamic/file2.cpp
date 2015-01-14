@@ -18,6 +18,8 @@ int main()
     
     //std::cout << name << "\ņ";
 
-    std::cout << iter->path().filename() << "\n";
+    //std::cout << iter->path().filename() << "\n";
+    std::cout << *iter << "\n";
+    
   }
 }
